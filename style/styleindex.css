@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+:root{
+    --bgColor: #17191b;
+    --colorNeon1: #33CCCC;
+    --colorNeon2:#cc33b8;
+    --colorFont:#fff;
+    --gradient: -webkit-linear-gradient(left, var(--colorNeon1), var(--colorNeon2));
+  
+  }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+.scan{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan .fingerprint{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url(../images/fingerPrint_01.png);
+    background-size: 300px;
+}
+.scan button{
+    position: relative;
+    top: 40px;
+    height: 60px;
+    width: 150px;
+    padding: 4px 0;
+      border: 3px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1%; 
+    background-color: var(--bgColor);
+    color: whitesmoke;
+}
